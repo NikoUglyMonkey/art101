@@ -1,102 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab 4 - Pseudocoding and Problem-solving</title>
+    <!-- This title is used for tabs and bookmarks -->
+    <title>Lab 4 - Pseudocoding and Problem-solving</title>
 
-	<!-- Use UTF character set, a good idea with any webpage -->
-  	<meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
-	<!-- Include a sitewide CSS file for consistent styling across the site -->
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
-	<!-- Lab-specifc CSS file for any special styling of this particular page -->
-	<link rel="stylesheet" type="text/css" href="css/lab.css">
-	
-	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+    <!-- Use UTF character set, a good idea with any webpage -->
+    <meta charset="UTF-8" />
+    <!-- Set viewport so page remains consistently scaled w narrow devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Include a sitewide CSS file for consistent styling across the site -->
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <!-- Lab-specifc CSS file for any special styling of this particular page -->
+    <link rel="stylesheet" type="text/css" href="css/lab.css">
+    
+    <!-- load jQuery library to make javascript easier (must be above our lab js)-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Link to javascript file - DEFER waits until all elements are rendered -->
+    <script type="text/javascript" src="./js/lab.js" defer></script>
 </head>
 <body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
-	<main id="content">
-		<section>
-			<h1>Lab 4 - Pseudocoding and Problem-solving</h1>
-			<div class="minor-section">
-					<h2>Challenge</h2>
-					<p>Get in the habit of thinking in terms of pseudocoding before jumping into coding.</p>
-			</div>
+    <!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+    <main id="content">
+        <section>
+            <h1>Lab 4 - Pseudocoding and Problem-solving</h1>
+            <div class="minor-section">
+                    <h2>Challenge</h2>
+                    <p>Get in the habit of thinking in terms of pseudocoding before jumping into coding.</p>
+            </div>
 
-			<div class="minor-section">
-					<h2>Problems</h2>
-					<p>It was difficult at first to break down games that we know like checkers into pseudocode. I had a hard time understanding and coming up with terminology
-						that you would use.
-					</p>
-			</div>
+            <div class="minor-section">
+                    <h2>Problems</h2>
+                    <p>It was difficult at first to break down games that we know like checkers into pseudocode. I had a hard time understanding and coming up with terminology
+                        that you would use.
+                    </p>
+            </div>
 
-			<div class="minor-section">
-					<h2>Reflection</h2>
-					<p>Over all I think the assignment went well. Nathan helped me through task 2, so I could understand what exactly the different steps meant. 
-						I think I can understand a little bit better how the process of coding goes from this assignment. 
-					</p>
-			</div>
+            <div class="minor-section">
+                    <h2>Reflection</h2>
+                    <p>Over all I think the assignment went well. Nathan helped me through task 2, so I could understand what exactly the different steps meant. 
+                        I think I can understand a little bit better how the process of coding goes from this assignment. 
+                    </p>
+            </div>
 
-			<div class="minor-section">
-					<h2>Results</h2>
-					<div id="output"></div>
-			</div>
-		</section>
-		<nav id="links">
-			<!-- Put links to other pages (including the homepage) here. -->
-			<script src="lab.js"><pre><code>
-				//PB&J Task 1:
-				Task 1:
-				Making a PB&J Sandwich
-				  Getting Ingredients and Tools
-					  Bread
-					  Peanut Butter
-					  Jelly
-					  Spreading Knife
-				  Putting the Sauces on the Bread
-					  Use the Spreading Knife
-					  Gather jelly on the knife, and spread it on the first slice of bread.
-					  Gather Peanut Butter on the knife, and spread it on the second slice of bread. 
-				  Creating the Sandwich
-					  Combine both the slices of bread with the ingredients facing towards each other.
-				
-				//Checkers Task 2:
-				Checkers
-				  Print the board before every turn
-					  Make changes to the board regarding player moves
-				  Accept User Input
-					  Reveal possible moves for the piece that the player chooses
-				  Execute User Input
-					  Move pieces after user confirms their move
-					  If the piece can make any more moves, let the player move that piece again.
-					  If not, end the players turn
-				  Create Possible Player Moves
-					  Make the simple checkers piece able to only move forward
-					  If the piece reaches the end of the board, promote it
-					  The piece can now move forwards and backwards
-				  Program AI for the Computer
-					  Set up a neural network for the AI
-					  Feed it hundreds of test data from previous checkers games found online.
-					  Create 3 different difficulties
-						Make different settings for each bot
-				  Make the win condition
-					  If a player loses all their pieces, they lose and the other player wins
-					  If neither player can move, then it’s a draw
-				  Create UI
-					  Make the possible moves bright to make it noticeable to the player
-					  When the game ends, show the player’s result
-						Show 2 buttons
-						  Play Again
-						  Go Back to Title
-				</code></pre></script>
-
-		</nav>
-	</main>
+            <div class="minor-section">
+                    <h2>Results</h2>
+                    <pre><code>
+                        // PB&J Task 1:
+                        Task 1:
+                        Making a PB&J Sandwich
+                          Getting Ingredients and Tools
+                              Bread
+                              Peanut Butter
+                              Jelly
+                              Spreading Knife
+                          Putting the Sauces on the Bread
+                              Use the Spreading Knife
+                              Gather jelly on the knife, and spread it on the first slice of bread.
+                              Gather Peanut Butter on the knife, and spread it on the second slice of bread. 
+                          Creating the Sandwich
+                              Combine both the slices of bread with the ingredients facing towards each other.
+                        
+                        // Checkers Task 2:
+                        Checkers
+                          Print the board before every turn
+                              Make changes to the board regarding player moves
+                          Accept User Input
+                              Reveal possible moves for the piece that the player chooses
+                          Execute User Input
+                              Move pieces after user confirms their move
+                              If the piece can make any more moves, let the player move that piece again.
+                              If not, end the players turn
+                          Create Possible Player Moves
+                              Make the simple checkers piece able to only move forward
+                              If the piece reaches the end of the board, promote it
+                              The piece can now move forwards and backwards
+                          Program AI for the Computer
+                              Set up a neural network for the AI
+                              Feed it hundreds of test data from previous checkers games found online.
+                              Create 3 different difficulties
+                                Make different settings for each bot
+                          Make the win condition
+                              If a player loses all their pieces, they lose and the other player wins
+                              If neither player can move, then it’s a draw
+                          Create UI
+                              Make the possible moves bright to make it noticeable to the player
+                              When the game ends, show the player’s result
+                                Show 2 buttons
+                                  Play Again
+                                  Go Back to Title
+                    </code></pre>
+            </div>
+        </section>
+        <nav id="links">
+            <!-- Put links to other pages (including the homepage) here. -->
+        </nav>
+    </main>
 </body>
 </html>
