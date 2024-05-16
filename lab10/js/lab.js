@@ -1,29 +1,25 @@
-/* 
-lab.js: Libraries & jQuery - simple js/jquery script that uses buttons to modify page elements
-Author: Niko Nissen
-Date: 5/12/2024
+/*
+   lab.js - Lab 10 - Javascript For The Web
+   Author: Niko Nissen
+   Date: 5/16/2024
 */
 
-  //add button to challenge section
-$("#challenge").append("<button id='button-challenge'>Click Here!</button>");
-//add a click listener to the challenge button
-$("#button-challenge").click(function(){
-    //now add (or subtract) the "special" class to the section
-    $("#challenge").toggleClass("special");
+function generateRandomText() {
+  const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+  const min = 3;
+  const max = 100;
+  const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
+  // Get a random starting index to slice the Lorem Ipsum text
+  const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
+  // Generate the random Lorem Ipsum-like text
+  return text.slice(randStart, randStart + randLen);
+}
+
+// click listener for button
+$("#make-convo").click(function(){
+  // get new fake dialogue
+  const newText = generateRandomText();
+  // append a new div to our output div
+  $("#output").append('<div class="text"><p>' + newText + '</p></div>');
 });
 
-//add button to problems section
-$("#problems").append("<button id='button-problems'>Click Here!</button>");
-//add a click listener to the problems button
-$("#button-problems").click(function(){
-    //now add (or subtract) the "special" class to the section
-    $("#problems").toggleClass("special");
-});
-
-//add button to results section
-$("#results").append("<button id='button-results'>Click here!</button>");
-//add a click listener to the results button
-$("#button-results").click(function(){
-    //now add (or subtract) the "special" class to the section
-    $("#results").toggleClass("special");
-});
