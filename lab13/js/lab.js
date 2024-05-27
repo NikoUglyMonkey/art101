@@ -12,7 +12,6 @@
    Make it so the output of your program appears in your output div.
 */
 
-
 for (let i = 1; i <= 200; i++){
    let str = ""
    if (i % 3 == 0 ){
